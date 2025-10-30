@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42caf2ac-48ba-434f-8d62-6c76343fb1ba" name="更改" comment="" />
+    <list default="true" id="42caf2ac-48ba-434f-8d62-6c76343fb1ba" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,6 +115,8 @@
       <workItem from="1761804790459" duration="4486000" />
       <workItem from="1761809457764" duration="8621000" />
       <workItem from="1761820259317" duration="95000" />
+      <workItem from="1761820358481" duration="151000" />
+      <workItem from="1761820513570" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="完成登录，新建菜单组件">
       <option name="closed" value="true" />
