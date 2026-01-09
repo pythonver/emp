@@ -41,4 +41,4 @@ jobs:
           # 本地要上传的目录（Vite 默认生成 dist）
           SOURCE: "dist/"
           # 服务器上的目标路径（对应你 Nginx 配置里的 root 路径）
-          TARGET: "/www/server/nginx/html"
+          TARGET: "/www/wwwroot/html"
