@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42caf2ac-48ba-434f-8d62-6c76343fb1ba" name="更改" comment="修正路由">
-      <change afterPath="$PROJECT_DIR$/src/views/system/user/index-page.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/asize-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/asize-nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request/apis/loginApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/apis/UserApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login/login-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/login-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/register/register-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register/register-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/assessment/assessment-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/assessment/assessment-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/home/home-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/home/home-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/root-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/root-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/target/target-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/target/target-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/user/user-page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +127,7 @@
       <workItem from="1763296319564" duration="681000" />
       <workItem from="1763361176138" duration="10104000" />
       <workItem from="1763516563482" duration="13000" />
+      <workItem from="1767933980967" duration="2706000" />
     </task>
     <task id="LOCAL-00001" summary="完成登录，新建菜单组件">
       <option name="closed" value="true" />
@@ -159,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761820658109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修正路由">
+      <option name="closed" value="true" />
+      <created>1767934207071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767934207071</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

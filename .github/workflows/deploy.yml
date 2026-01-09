@@ -1,0 +1,44 @@
+name: Deploy Vue Project to Volcano Cloud
+
+# 触发条件：当你把代码 push 到 master 分支时（如果你的主分支叫 main，请改为 main）
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 下载仓库代码
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # 2. 安装 Node 环境并打包
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22' # 保持和你本地 Node 版本一致
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      # 3. 核心步骤：通过 SSH 将打包后的 dist 目录发送到服务器
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          # 这四个变量会从你填写的 GitHub Secrets 中自动读取
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+
+          # 同步参数：-avz 代表归档、压缩传输；--delete 代表如果本地删了文件，服务器也同步删除
+          ARGS: "-avz --delete"
+          # 本地要上传的目录（Vite 默认生成 dist）
+          SOURCE: "dist/"
+          # 服务器上的目标路径（对应你 Nginx 配置里的 root 路径）
+          TARGET: "/www/server/nginx/html"

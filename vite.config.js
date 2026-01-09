@@ -7,11 +7,19 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/client/',
   plugins: [vue(), vueJsx(), vueDevTools()],
   server: {
     host: '0.0.0.0',
-    port: 8066,
-    allowedHosts: ['www.rxt.client.com'],
+    port: 5173,
+    proxy: {
+      '/api': {
+        target: 'https://localhost/server/',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
+    }
   },
   resolve: {
     alias: {
