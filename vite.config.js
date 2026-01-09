@@ -11,15 +11,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx(), vueDevTools()],
   server: {
     host: '0.0.0.0',
-    port: 5173,
-    proxy: {
-      '/api': {
-        target: 'https://localhost/server/',
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      },
-    }
+    port: 5173
   },
   resolve: {
     alias: {
