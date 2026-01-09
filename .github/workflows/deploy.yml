@@ -35,6 +35,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
 
           # 同步参数：-avz 代表归档、压缩传输；--delete 代表如果本地删了文件，服务器也同步删除
           ARGS: "-avz --delete"
