@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42caf2ac-48ba-434f-8d62-6c76343fb1ba" name="更改" comment="">
+    <list default="true" id="42caf2ac-48ba-434f-8d62-6c76343fb1ba" name="更改" comment="修正路由">
+      <change afterPath="$PROJECT_DIR$/src/views/system/user/index-page.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/asize-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/asize-nav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-nav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/request/apis/loginApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/apis/UserApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/request/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/request/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login/login-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/login-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/register/register-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register/register-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/assessment/assessment-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/assessment/assessment-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/home/home-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/home/home-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/root-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/root-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/target/target-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/target/target-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/user/user-page.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,7 +67,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\A.project\\vue\\emp\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -116,7 +130,18 @@
       <workItem from="1761809457764" duration="8621000" />
       <workItem from="1761820259317" duration="95000" />
       <workItem from="1761820358481" duration="151000" />
-      <workItem from="1761820513570" duration="123000" />
+      <workItem from="1761820513570" duration="337000" />
+      <workItem from="1761823736922" duration="470000" />
+      <workItem from="1761882805126" duration="1714000" />
+      <workItem from="1762062826471" duration="632000" />
+      <workItem from="1762143859468" duration="1097000" />
+      <workItem from="1762151734210" duration="4999000" />
+      <workItem from="1762160776786" duration="285000" />
+      <workItem from="1762164418222" duration="47000" />
+      <workItem from="1763276012317" duration="670000" />
+      <workItem from="1763296319564" duration="681000" />
+      <workItem from="1763361176138" duration="10104000" />
+      <workItem from="1763516563482" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="完成登录，新建菜单组件">
       <option name="closed" value="true" />
@@ -126,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760078025477</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修正路由">
+      <option name="closed" value="true" />
+      <created>1761820658109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761820658109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成登录，新建菜单组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成登录，新建菜单组件" />
+    <MESSAGE value="修正路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正路由" />
   </component>
 </project>

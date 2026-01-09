@@ -1,22 +1,36 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
-import { getAllUsers } from '@/request/apis/userApi.js'
+import { reactive } from 'vue'
 
 const useUserStore = defineStore('user', () => {
-  const userList = ref([])
-
-  function initUserList() {
-    getAllUsers().then(({ data }) => {
-      userList.value = data.data || []
+  const userInfo = reactive({
+    userId: undefined,
+    studentId: '',
+    name: '',
+    phone: '',
+  })
+  const userProfile = reactive({
+    createdAt: '',
+    updatedAt: '',
+    id: 0,
+    userId: 0,
+    age: 0,
+    education: '',
+    major: '',
+    city: '',
+    hardSkills: '',
+    softSkills: '',
+    workExperience: '',
+    projectExperience: '',
+    availableTimePerWeek: 0,
+    budgetRange: '',
+    mbtiType: '',
+  })
+  function updateUserInfo(data) {
+    Object.keys(data).forEach((key) => {
+      userInfo[key] = data[key]
     })
   }
-  function updateUserList(data) {
-    userList.value = data
-  }
-  function addNewUser(data) {
-    userList.value.push(data)
-  }
-  return { userList, initUserList, updateUserList, addNewUser }
+  return { userInfo, updateUserInfo, userProfile }
 })
 
 export default useUserStore

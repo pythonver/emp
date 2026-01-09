@@ -47,39 +47,38 @@ const router = createRouter({
         {
           path: 'user',
           name: 'user',
-          component: () => import('@/views/system/user/user-page.vue'),
-        }
-      ]
-    }
+          component: () => import('@/views/system/user/index-page.vue'),
+        },
+      ],
+    },
   ],
 })
 export const topRouter = [
   {
     path: '/system/home',
     name: '首页',
-    icon: ''
+    icon: '',
   },
   {
     path: '/system/assessment',
     name: '职业测评',
-    icon: ''
+    icon: '',
   },
   {
     path: '/system/target',
     name: '职业目标',
-    icon: ''
+    icon: '',
   },
   {
     path: '/system/learn',
     name: '学习资源',
-    icon: ''
-  }
-
+    icon: '',
+  },
 ]
 export const userRouter = [
   {
     path: '/system/user',
     name: '个人信息',
-  }
+  },
 ]
 export default router
