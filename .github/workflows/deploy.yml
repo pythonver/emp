@@ -36,9 +36,9 @@ jobs:
           REMOTE_USER: ${{ secrets.SERVER_USER }}
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
 
-          # 同步参数：-avz 代表归档、压缩传输；--delete 代表如果本地删了文件，服务器也同步删除
-          ARGS: "-avz --delete"
           # 本地要上传的目录（Vite 默认生成 dist）
           SOURCE: "dist/"
           # 服务器上的目标路径（对应你 Nginx 配置里的 root 路径）
           TARGET: "/www/wwwroot/html"
+          # 排除宝塔面板
+          ARGS: "-avz --delete --exclude='.user.ini' --exclude='.htaccess'"
